@@ -9,7 +9,8 @@ WebDriver driver;   //обьявили класс
 
     @BeforeMethod   // запуск создания
     public void setUp(){    //создали метод запуска хрома
-   driver = new ChromeDriver();   //инициализация обьекта
+
+        driver = new ChromeDriver();   //инициализация обьекта
     }
 
     @Test // запуск открытия
