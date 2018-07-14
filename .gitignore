@@ -14,3 +14,6 @@ gradle-app.setting
 # gradle/wrapper/gradle-wrapper.properties
 firstProject/build.gradle
 .idea/workspace.xml
+.idea/modules/edgeEbay.iml
+.idea/modules/edgeEbay.iml
+.idea/modules/edgeEbay_main.iml

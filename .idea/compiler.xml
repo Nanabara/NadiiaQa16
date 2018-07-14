@@ -2,10 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="edgeEbay_main" target="1.8" />
+      <module name="edgeEbay_test" target="1.8" />
+      <module name="enterEbay_main" target="1.8" />
+      <module name="enterEbay_test" target="1.8" />
       <module name="firstProject_main" target="1.8" />
       <module name="firstProject_test" target="1.8" />
       <module name="NewModule_main" target="1.8" />
       <module name="NewModule_test" target="1.8" />
+      <module name="OpenEBay_main" target="1.8" />
+      <module name="OpenEBay_test" target="1.8" />
+      <module name="second-web-selenium-byRecorder_main" target="1.8" />
+      <module name="second-web-selenium-byRecorder_test" target="1.8" />
       <module name="selenium-tests_main" target="1.8" />
       <module name="selenium-tests_test" target="1.8" />
     </bytecodeTargetLevel>

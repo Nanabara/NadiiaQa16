@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="second-web-selenium-byRecorder" external.linked.project.path="$MODULE_DIR$/../../second-web-selenium-byRecorder" external.root.project.path="$MODULE_DIR$/../../second-web-selenium-byRecorder" external.system.id="GRADLE" external.system.module.group="TelRan16" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../second-web-selenium-byRecorder">
+      <excludeFolder url="file://$MODULE_DIR$/../../second-web-selenium-byRecorder/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../second-web-selenium-byRecorder/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../second-web-selenium-byRecorder/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
