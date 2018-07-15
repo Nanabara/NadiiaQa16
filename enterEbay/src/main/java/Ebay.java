@@ -22,15 +22,23 @@ public class Ebay {
 
     @Test
     public void testEbay() {
-        signIn();
+        openSite();
 
-        driver.findElement(By.linkText("Sign in")).click();
+        clickSignIn();
 
         fillUserID();
 
         fillPassword();
 
         clickOnSighBut();
+    }
+
+    public void clickSignIn() {
+        driver.findElement(By.linkText("Sign in")).click();
+    }
+
+    public void openSite() {
+        signIn();
     }
 
     public void signIn() {
