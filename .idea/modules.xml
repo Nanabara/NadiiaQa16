@@ -5,9 +5,15 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NewModule.iml" filepath="$PROJECT_DIR$/.idea/modules/NewModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NewModule_main.iml" filepath="$PROJECT_DIR$/.idea/modules/NewModule_main.iml" group="NewModule" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/NewModule_test.iml" filepath="$PROJECT_DIR$/.idea/modules/NewModule_test.iml" group="NewModule" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay_main.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay_main.iml" group="enterEbay" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay_test.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay_test.iml" group="enterEbay" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/firstProject.iml" filepath="$PROJECT_DIR$/.idea/modules/firstProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/firstProject_main.iml" filepath="$PROJECT_DIR$/.idea/modules/firstProject_main.iml" group="firstProject" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/firstProject_test.iml" filepath="$PROJECT_DIR$/.idea/modules/firstProject_test.iml" group="firstProject" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder.iml" filepath="$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder_main.iml" filepath="$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder_main.iml" group="second-web-selenium-byRecorder" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder_test.iml" filepath="$PROJECT_DIR$/.idea/modules/second-web-selenium-byRecorder_test.iml" group="second-web-selenium-byRecorder" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/selenium-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/selenium-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/selenium-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/selenium-tests_main.iml" group="selenium-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/selenium-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/selenium-tests_test.iml" group="selenium-tests" />

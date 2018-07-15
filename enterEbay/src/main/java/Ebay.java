@@ -1,8 +1,11 @@
 
 import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
+
 import org.testng.annotations.*;
+
 import static org.testng.Assert.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -12,14 +15,14 @@ public class Ebay {
 
 
     @BeforeClass(alwaysRun = true)
-    public void setUp() throws Exception {
+    public void setUp() {
         driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @Test
-    public void testEbay() throws Exception {
-        driver.get("https://www.ebay.com/");
+    public void testEbay() {
+        signIn();
 
         driver.findElement(By.linkText("Sign in")).click();
 
@@ -28,6 +31,10 @@ public class Ebay {
         fillPassword();
 
         clickOnSighBut();
+    }
+
+    public void signIn() {
+        driver.get("https://www.ebay.com/");
     }
 
     public void clickOnSighBut() {
@@ -50,7 +57,7 @@ public class Ebay {
     public void tearDown() throws Exception {
         Thread.sleep(3000);
         driver.quit();
-        }
+    }
 
     private boolean isElementPresent(By by) {
         try {
@@ -59,5 +66,6 @@ public class Ebay {
         } catch (NoSuchElementException e) {
             return false;
         }
+
     }
-  }
+}
