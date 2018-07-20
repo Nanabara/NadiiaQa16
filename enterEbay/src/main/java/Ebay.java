@@ -13,7 +13,6 @@ import org.openqa.selenium.support.ui.Select;
 public class Ebay {
     private WebDriver driver;
 
-
     @BeforeClass(alwaysRun = true)
     public void setUp() {
         driver = new FirefoxDriver();
