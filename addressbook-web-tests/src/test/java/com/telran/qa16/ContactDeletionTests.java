@@ -4,21 +4,34 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class GroupDeletionTests {
+public class ContactDeletionTests {
     WebDriver wd;
 
-    @BeforeMethod
+    @BeforeClass
     public void setUp() {
         wd = new ChromeDriver();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         openSite();
         login();
+
+    }
+
+    @Test
+    public void testContactDeletion(){
+        goToHomePage();
+        goToSelectContact();
+        goToDeleteContact();
+        goToGroupPage();
+    }
+
+    public void openSite() {
+        wd.navigate().to("http://localhost/addressbook");
     }
 
     public void login() {
@@ -33,43 +46,25 @@ public class GroupDeletionTests {
         wd.findElement(By.xpath("//*[@value ='Login']")).click();
     }
 
-    public void openSite() {
-
-        wd.navigate().to("http://localhost/addressbook");
-    }
-
-    @Test
-    public void testGroupDeletion() {
-        goToGroupsPage();
-        selectGroup();
-        groupDeletion();
-        returnToGroupPage();
-    }
-
-    public void returnToGroupPage() {
-
+    public void goToGroupPage() {
         wd.findElement(By.linkText("group page")).click();
     }
 
-    public void groupDeletion() {
-
-        wd.findElement(By.name("delete")).click();
-    }
-
-    public void selectGroup() {
-
+    public void goToSelectContact() {
         wd.findElement(By.name("selected[]")).click();
     }
 
-    public void goToGroupsPage() {
-
-        wd.findElement(By.linkText("groups")).click();
+    public void goToDeleteContact() {
+        wd.findElement(By.xpath("//*[@value ='Delete']")).click();
     }
 
-    @AfterClass
+     public void goToHomePage() {
+        wd.findElement(By.linkText("home")).click();
+    }
+
+ /*@AfterClass
     public void tearDown() {
-
         wd.quit();
-    }
-}
+    }*/
 
+}
