@@ -7,7 +7,7 @@ public class ContactCreationTests extends TestBase{
     @Test
     public void testContactCreation() {
         goToAddNew();
-        fillContactCreationForm("Masha", "Mashkova", "Terner,7", "masha@gmail.com");
+        fillContactCreationForm(new ContactData("Masha", "Mashkova", "Terner,7", "masha@gmail.com"));
         submitContactCreationForm();
 
     }

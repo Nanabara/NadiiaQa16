@@ -8,7 +8,10 @@ public class GroupCreationTests extends TestBase{
     public void testGroupCreation() {
         goToGroupsPage();
         initGroupCreation();
-        fillGroupsForm("testGroupName1", "testGroupHeader1", "testGroupFooter1");
+        fillGroupsForm(new GroupData()
+                .withName("testGroupName1")
+                .withHeader("testGroupHeader1")
+                .withFooter("testGroupFooter1"));
         submitGroupCreation();
         returnToTheGroupsPage();
     }
@@ -17,7 +20,10 @@ public class GroupCreationTests extends TestBase{
     public void testGroupCreationWithEmptyFields() {
         goToGroupsPage();
         initGroupCreation();
-        fillGroupsForm("", "", "");
+        fillGroupsForm(new GroupData()
+                .withName("")
+                .withHeader("")
+                .withFooter(""));
         submitGroupCreation();
         returnToTheGroupsPage();
     }
@@ -26,7 +32,10 @@ public class GroupCreationTests extends TestBase{
     public void testGroupCreationWithLongName() {
         goToGroupsPage();
         initGroupCreation();
-        fillGroupsForm("naaaaaammmmmeeeeeeeeeeeeeeeee", "", "");
+        fillGroupsForm(new GroupData()
+                .withName("naaaaaammmmmeeeeeeeeeeeeeeeee")
+                .withHeader("testGroupHeader1")
+                .withFooter("testGroupFooter1"));
         submitGroupCreation();
         returnToTheGroupsPage();
     }
