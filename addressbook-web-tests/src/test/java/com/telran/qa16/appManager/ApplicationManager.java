@@ -1,17 +1,16 @@
-package com.telran.qa16;
+package com.telran.qa16.appManager;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+
     SessionHelper sessionHelper;
     GroupHelper groupHelper;
     ContactHelper contactHelper;
-    WebDriver wd;
+    public WebDriver wd;
 
     public void start() {
         wd = new ChromeDriver();
@@ -38,4 +37,6 @@ public class ApplicationManager {
     public SessionHelper getSessionHelper() {
         return sessionHelper;
     }
+
+
 }

@@ -1,5 +1,6 @@
-package com.telran.qa16;
+package com.telran.qa16.tests;
 
+import com.telran.qa16.appManager.ApplicationManager;
 import org.openqa.selenium.By;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -22,6 +23,7 @@ public class TestBase {
         app.wd.switchTo().alert().accept();
     }
 
-    public void goToDeleteContact() { app.wd.findElement(By.xpath("//*[@value ='Delete']")).click();
+    public void goToDeleteContact() {
+        app.wd.findElement(By.xpath("//*[@value ='Delete']")).click();
     }
 }

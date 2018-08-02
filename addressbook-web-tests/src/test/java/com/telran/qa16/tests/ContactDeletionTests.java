@@ -1,20 +1,19 @@
-package com.telran.qa16;
+package com.telran.qa16.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ContactDeletionTests extends TestBase{
+public class ContactDeletionTests extends TestBase {
      @Test
     public void testContactDeletion(){
           if(!app.getContactHelper().isContactPresent()){
             app.getContactHelper().createContact();
          }
-        int before = app.getGroupHelper().getGroupsCount();
+        int before = app.getContactHelper().getContactCount();
         app.getContactHelper().goToSelectContact();
-        goToDeleteContact();
-        confirmAlert();
-        int after = app.getGroupHelper().getGroupsCount();
+        app.getContactHelper().goToDeleteContact();
+        app.getContactHelper().confirmAlert();
+        int after = app.getContactHelper().getContactCount();
         Assert.assertEquals(after, before-1);
      }
 

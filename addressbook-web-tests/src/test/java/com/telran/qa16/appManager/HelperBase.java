@@ -1,4 +1,4 @@
-package com.telran.qa16;
+package com.telran.qa16.appManager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

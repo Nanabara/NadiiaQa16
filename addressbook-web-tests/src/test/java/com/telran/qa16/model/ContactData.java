@@ -1,4 +1,4 @@
-package com.telran.qa16;
+package com.telran.qa16.model;
 
 public class ContactData {
     private String firstName;

@@ -1,6 +1,4 @@
-package com.telran.qa16;
-
-import org.openqa.selenium.WebDriver;
+package com.telran.qa16.model;
 
 public class GroupData  {
 

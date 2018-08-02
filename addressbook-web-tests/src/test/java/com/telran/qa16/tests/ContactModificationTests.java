@@ -1,6 +1,7 @@
-package com.telran.qa16;
+package com.telran.qa16.tests;
 
-import org.openqa.selenium.By;
+import com.telran.qa16.model.ContactData;
+import com.telran.qa16.tests.TestBase;
 import org.testng.annotations.Test;
 
 public class ContactModificationTests extends TestBase {

@@ -1,9 +1,10 @@
-package com.telran.qa16;
+package com.telran.qa16.tests;
 
+import com.telran.qa16.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GroupCreationTests extends TestBase{
+public class GroupCreationTests extends TestBase {
 
     @Test
     public void testGroupCreationWithEmptyFields() {

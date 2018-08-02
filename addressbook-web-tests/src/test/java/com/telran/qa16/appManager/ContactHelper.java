@@ -1,9 +1,10 @@
-package com.telran.qa16;
+package com.telran.qa16.appManager;
 
+import com.telran.qa16.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class ContactHelper extends HelperBase{
+public class ContactHelper extends HelperBase {
 
     public ContactHelper(WebDriver wd) {
        super(wd);
@@ -44,11 +45,27 @@ public class ContactHelper extends HelperBase{
         goToAddNew();
         fillContactCreationForm(
                 new ContactData()
-                .withFirstName("GJHG")
-                .withLastName("kjbkj")
-                .withEmail(".kbkjb")
-                .withAddress("dfdfh"));
+                .withFirstName("Vasya")
+                .withLastName("Ivanov")
+                .withEmail("w@gmail.com")
+                .withAddress("terner"));
         submitContactCreationForm();
 
     }
+    public int getGroupsCount() {
+        return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public void goToDeleteContact() {
+        click(By.xpath("//*[@value = 'Delete']"));
+    }
+
+        public int getContactCount() {
+            return wd.findElements(By.name("selected[]")).size();
+    }
+
+    public void confirmAlert(){
+        wd.switchTo().alert().accept();
+    }
 }
+

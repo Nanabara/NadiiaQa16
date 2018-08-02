@@ -1,9 +1,9 @@
-package com.telran.qa16;
+package com.telran.qa16.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GroupDeletionTests extends TestBase{
+public class GroupDeletionTests extends TestBase {
     @Test
     public void testGroupDeletion() {
         app.getGroupHelper().goToGroupsPage();

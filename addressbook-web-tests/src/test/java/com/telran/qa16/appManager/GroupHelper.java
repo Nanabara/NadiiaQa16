@@ -1,9 +1,10 @@
-package com.telran.qa16;
+package com.telran.qa16.appManager;
 
+import com.telran.qa16.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GroupHelper extends HelperBase{
+public class GroupHelper extends HelperBase {
 
     public GroupHelper(WebDriver wd){
         super(wd);
@@ -48,8 +49,7 @@ public class GroupHelper extends HelperBase{
     }
 
     public void selectGroupByIndex(int ind){
-        wd.findElements(By.name("selected[]")).get(ind).click(); //удаляет последнюю группу
-    }
+        wd.findElements(By.name("selected[]")).get(ind).click();   }
 
     public int getGroupsCount() {
         return wd.findElements(By.name("selected[]")).size();
