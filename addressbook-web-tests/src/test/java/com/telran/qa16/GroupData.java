@@ -1,6 +1,9 @@
 package com.telran.qa16;
 
-public class GroupData {
+import org.openqa.selenium.WebDriver;
+
+public class GroupData  {
+
     private String name;
     private String header;
     private String footer;

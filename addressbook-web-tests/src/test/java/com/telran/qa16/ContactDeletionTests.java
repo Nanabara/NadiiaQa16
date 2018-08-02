@@ -7,22 +7,15 @@ import org.testng.annotations.Test;
 public class ContactDeletionTests extends TestBase{
      @Test
     public void testContactDeletion(){
-         if(!isContactPresent()){
-             createContact();
+          if(!app.getContactHelper().isContactPresent()){
+            app.getContactHelper().createContact();
          }
-        int before = getGroupsCount();
-        goToSelectContact();
+        int before = app.getGroupHelper().getGroupsCount();
+        app.getContactHelper().goToSelectContact();
         goToDeleteContact();
         confirmAlert();
-        int after = getGroupsCount();
+        int after = app.getGroupHelper().getGroupsCount();
         Assert.assertEquals(after, before-1);
      }
 
-    private void confirmAlert() {
-        wd.switchTo().alert().accept();
-    }
-
-    public void goToDeleteContact() {
-        wd.findElement(By.xpath("//*[@value ='Delete']")).click();
-    }
 }

@@ -7,20 +7,20 @@ public class GroupModificationTests extends TestBase {
 
 @Test
 public void testGroupModification() {
-goToGroupsPage();
-    if(!isGroupPresent()){
-        createGroup();
+app.getGroupHelper().goToGroupsPage();
+    if(!app.getGroupHelper().isGroupPresent()){
+        app.getGroupHelper().createGroup();
     }
-    int before = getGroupsCount();
-    goToSelectedGroups();
-    goToModificationGroup();
-    fillGroupsForm(new GroupData()
+    int before = app.getGroupHelper().getGroupsCount();
+    app.getGroupHelper().goToSelectedGroups();
+    app.getGroupHelper().goToModificationGroup();
+    app.getGroupHelper().fillGroupsForm(new GroupData()
                 .withName("modifiedTestGroupName")
                 .withHeader("modifiedTestGroupHeader")
                 .withFooter("modifiedTestGroupFooter"));
-    goToSubmitGroup();
-    returnToTheGroupsPage();
-    int after = getGroupsCount();
+    app.getGroupHelper().goToSubmitGroup();
+    app.getGroupHelper().returnToTheGroupsPage();
+    int after = app.getGroupHelper().getGroupsCount();
     Assert.assertEquals(after, before);
   }
 }
