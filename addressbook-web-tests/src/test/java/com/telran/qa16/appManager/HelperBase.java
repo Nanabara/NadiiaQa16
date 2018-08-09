@@ -42,7 +42,7 @@ public class HelperBase {
         }
     }
 
-    public boolean isContactPresent(){
+    public boolean isContactPresent() {
         return isContactElementPresent(By.name("selected[]"));
     }
 }

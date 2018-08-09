@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 
 public class GroupHelper extends HelperBase {
 
-    public GroupHelper(WebDriver wd){
+    public GroupHelper(WebDriver wd) {
         super(wd);
     }
 
@@ -29,8 +29,8 @@ public class GroupHelper extends HelperBase {
     }
 
     public void goToGroupsPage() {
-        if(!isElementPresent(By.xpath("//h1[contains(text(),'Groups')]"))
-                &&!isElementPresent(By.name("new"))){
+        if (!isElementPresent(By.xpath("//h1[contains(text(),'Groups')]"))
+                && !isElementPresent(By.name("new"))) {
             click(By.cssSelector("[href='group.php']"));
         }
     }
@@ -51,8 +51,9 @@ public class GroupHelper extends HelperBase {
         click(By.name("selected[]"));
     }
 
-    public void selectGroupByIndex(int ind){
-        wd.findElements(By.name("selected[]")).get(ind).click();   }
+    public void selectGroupByIndex(int ind) {
+        wd.findElements(By.name("selected[]")).get(ind).click();
+    }
 
     public int getGroupsCount() {
         return wd.findElements(By.name("selected[]")).size();
@@ -62,12 +63,12 @@ public class GroupHelper extends HelperBase {
         return isContactElementPresent(locator);
     }
 
-    public boolean isGroupPresent(){
+    public boolean isGroupPresent() {
 
         return isElementPresent(By.name("selected[]"));
     }
 
-    public void createGroup(){  // создаем новую группу
+    public void createGroup() {  // создаем новую группу
         initGroupCreation();
         fillGroupsForm(new GroupData()
                 .withName("testgroupname")
