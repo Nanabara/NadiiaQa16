@@ -11,11 +11,9 @@ public class ContactHelper extends HelperBase {
     }
 
     public void goToAddNew() {
-        if (!isElementPresent(By.id("maintable"))) {
-            goToHomePage();
-            click(By.linkText("add new"));
-        }
-  }
+        click(By.linkText("add new"));
+    }
+
     public void fillContactCreationForm(ContactData contactData) {
         type(By.name("firstname"),contactData.getFirstName());
         type(By.name("lastname"),contactData.getLastName());
@@ -45,7 +43,6 @@ public class ContactHelper extends HelperBase {
 
     public void createContact() {
       goToAddNew();
-
                fillContactCreationForm(
                 new ContactData()
                 .withFirstName("Vasya")
