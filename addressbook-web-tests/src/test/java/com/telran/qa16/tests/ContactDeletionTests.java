@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class ContactDeletionTests extends TestBase {
      @Test
-    public void testContactDeletion(){
+    public void testContactDeletion() throws InterruptedException {
           if(!app.getContactHelper().isContactPresent()){
             app.getContactHelper().createContact();
          }

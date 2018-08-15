@@ -69,8 +69,9 @@ public class ContactHelper extends HelperBase {
         return wd.findElements(By.name("selected[]")).size();
     }
 
-    public void confirmAlert() {
+    public void confirmAlert() throws InterruptedException {
         wd.switchTo().alert().accept();
+        Thread.sleep(2000);
     }
 
     public void isOnTheContactPage() {

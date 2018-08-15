@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa16.tests.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-06T17:25:44" hostname="WIN-7GOOH5DG9FC" time="10.911">
+<testsuite name="com.telran.qa16.tests.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-15T17:39:32" hostname="WIN-7GOOH5DG9FC" time="11.185">
   <properties/>
-  <testcase name="testGroupCreationWithEmptyFields" classname="com.telran.qa16.tests.GroupCreationTests" time="10.911"/>
+  <testcase name="testGroupCreationWithEmptyFields" classname="com.telran.qa16.tests.GroupCreationTests" time="11.185"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
