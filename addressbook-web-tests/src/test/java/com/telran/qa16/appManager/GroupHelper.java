@@ -3,6 +3,10 @@ package com.telran.qa16.appManager;
 import com.telran.qa16.model.GroupData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class GroupHelper extends HelperBase {
 
@@ -10,8 +14,9 @@ public class GroupHelper extends HelperBase {
         super(wd);
     }
 
-    public void returnToTheGroupsPage() {
+    public void returnToTheGroupsPage() throws InterruptedException {
         click(By.linkText("group page"));
+        Thread.sleep(2000);
     }
 
     public void submitGroupCreation() {
@@ -68,7 +73,7 @@ public class GroupHelper extends HelperBase {
         return isElementPresent(By.name("selected[]"));
     }
 
-    public void createGroup() {  // создаем новую группу
+    public void createGroup() throws InterruptedException {  // создаем новую группу
         initGroupCreation();
         fillGroupsForm(new GroupData()
                 .withName("testgroupname")
@@ -76,7 +81,19 @@ public class GroupHelper extends HelperBase {
                 .withFooter("testgroupfooter"));
         submitGroupCreation();
         returnToTheGroupsPage();
-
     }
 
+    public List<GroupData> getGroupsList() {
+        List<GroupData> groups = new ArrayList<>(); // создаем новый список
+        List<WebElement> elements =
+                wd.findElements(By.cssSelector("span.group"));
+    for(WebElement element: elements){
+    String name = element.getText();
+    int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
+    GroupData group = new GroupData().withId(id).withName(name);
+    groups.add(group);
+}
+        System.out.println(groups);
+        return groups;
+    }
 }

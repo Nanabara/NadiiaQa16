@@ -4,24 +4,43 @@ import com.telran.qa16.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.HashSet;
+import java.util.List;
+
 public class GroupModificationTests extends TestBase {
 
 @Test
-public void testGroupModification() {
+public void testGroupModification() throws InterruptedException {
 app.getGroupHelper().goToGroupsPage();
     if(!app.getGroupHelper().isGroupPresent()){
         app.getGroupHelper().createGroup();
     }
-    int before = app.getGroupHelper().getGroupsCount();
-    app.getGroupHelper().goToSelectedGroups();
+
+    List<GroupData> groupsListBefore
+            =app.getGroupHelper().getGroupsList();
+
+   app.getGroupHelper().goToSelectedGroups();
     app.getGroupHelper().goToModificationGroup();
-    app.getGroupHelper().fillGroupsForm(new GroupData()
-                .withName("modifiedTestGroupName")
-                .withHeader("modifiedTestGroupHeader")
-                .withFooter("modifiedTestGroupFooter"));
+
+    GroupData group = new GroupData()
+            .withId(groupsListBefore.get(0).getId())
+            .withName("modifiedTestGroupName")
+            .withHeader("modifiedTestGroupHeader")
+            .withFooter("modifiedTestGroupFooter");
+
+    app.getGroupHelper().fillGroupsForm(group);
     app.getGroupHelper().goToSubmitGroup();
     app.getGroupHelper().returnToTheGroupsPage();
-    int after = app.getGroupHelper().getGroupsCount();
-    Assert.assertEquals(after, before);
+
+
+    List<GroupData>groupsListAfter
+            =app.getGroupHelper().getGroupsList();
+    Assert.assertEquals(groupsListAfter.size(), groupsListBefore.size());
+    groupsListBefore.remove(0);
+    groupsListBefore.add(group);
+
+  //  Assert.assertEquals(new HashSet<Object>(groupsListAfter), new HashSet<Object>(groupsListBefore));
+
+
   }
 }
