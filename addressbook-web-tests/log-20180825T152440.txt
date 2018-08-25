@@ -1,0 +1,2 @@
+15:24:45.820 [main] INFO  com.telran.qa16.tests.TestBase - Start the testContactCreation
+15:24:54.450 [main] INFO  com.telran.qa16.tests.TestBase - End of the testContactCreation

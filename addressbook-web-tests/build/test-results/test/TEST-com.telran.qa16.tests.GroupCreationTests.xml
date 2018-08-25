@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa16.tests.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-15T17:39:32" hostname="WIN-7GOOH5DG9FC" time="11.185">
+<testsuite name="com.telran.qa16.tests.GroupCreationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-20T17:03:45" hostname="WIN-7GOOH5DG9FC" time="14.404">
   <properties/>
-  <testcase name="testGroupCreationWithEmptyFields" classname="com.telran.qa16.tests.GroupCreationTests" time="11.185"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testGroupCreationWithEmptyFields" classname="com.telran.qa16.tests.GroupCreationTests" time="14.404"/>
+  <system-out><![CDATA[20:03:45.300 [Test worker] INFO  com.telran.qa16.tests.TestBase - Start the testGroupCreationWithEmptyFields
+[Group id=76, name=, Group id=67, name=C, Group id=69, name=D, Group id=70, name=GroupName, Group id=77, name=GroupName, Group id=78, name=GroupName, Group id=79, name=GroupName, Group id=80, name=GroupName, Group id=81, name=GroupName, Group id=82, name=GroupName, Group id=83, name=GroupName, Group id=84, name=GroupName, Group id=66, name=modifiedTestGroupName, Group id=71, name=modifiedTestGroupName, Group id=72, name=modifiedTestGroupName, Group id=75, name=modifiedTestGroupName]
+[Group id=76, name=, Group id=67, name=C, Group id=69, name=D, Group id=70, name=GroupName, Group id=77, name=GroupName, Group id=78, name=GroupName, Group id=79, name=GroupName, Group id=80, name=GroupName, Group id=81, name=GroupName, Group id=82, name=GroupName, Group id=83, name=GroupName, Group id=84, name=GroupName, Group id=85, name=GroupName, Group id=66, name=modifiedTestGroupName, Group id=71, name=modifiedTestGroupName, Group id=72, name=modifiedTestGroupName, Group id=75, name=modifiedTestGroupName]
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

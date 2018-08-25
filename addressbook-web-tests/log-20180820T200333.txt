@@ -1,0 +1,12 @@
+20:03:37.273 [Test worker] INFO  com.telran.TestBase - Start the testContactCreation
+20:03:41.215 [Test worker] INFO  com.telran.TestBase - End of the testContactCreation
+20:03:41.216 [Test worker] INFO  com.telran.TestBase - Start the testContactDeletion
+20:03:44.485 [Test worker] INFO  com.telran.TestBase - End of the testContactDeletion
+20:03:44.486 [Test worker] INFO  com.telran.TestBase - Start the testContactModification
+20:03:45.298 [Test worker] INFO  com.telran.TestBase - End of the testContactModification
+20:03:45.300 [Test worker] INFO  com.telran.TestBase - Start the testGroupCreationWithEmptyFields
+20:03:59.704 [Test worker] INFO  com.telran.TestBase - End of the testGroupCreationWithEmptyFields
+20:03:59.705 [Test worker] INFO  com.telran.TestBase - Start the testGroupDeletion
+20:04:03.251 [Test worker] INFO  com.telran.TestBase - End of the testGroupDeletion
+20:04:03.252 [Test worker] INFO  com.telran.TestBase - Start the testGroupModification
+20:04:07.271 [Test worker] INFO  com.telran.TestBase - End of the testGroupModification

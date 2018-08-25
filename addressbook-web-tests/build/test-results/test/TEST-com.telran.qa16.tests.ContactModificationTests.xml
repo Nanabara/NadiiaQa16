@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa16.tests.ContactModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-15T17:39:30" hostname="WIN-7GOOH5DG9FC" time="1.49">
+<testsuite name="com.telran.qa16.tests.ContactModificationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-20T17:03:44" hostname="WIN-7GOOH5DG9FC" time="0.81">
   <properties/>
-  <testcase name="testContactModification" classname="com.telran.qa16.tests.ContactModificationTests" time="1.49"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testContactModification" classname="com.telran.qa16.tests.ContactModificationTests" time="0.81"/>
+  <system-out><![CDATA[20:03:44.486 [Test worker] INFO  com.telran.qa16.tests.TestBase - Start the testContactModification
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

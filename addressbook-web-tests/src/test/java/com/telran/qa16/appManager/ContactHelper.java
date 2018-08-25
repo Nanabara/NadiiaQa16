@@ -3,6 +3,10 @@ package com.telran.qa16.appManager;
 import com.telran.qa16.model.ContactData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ContactHelper extends HelperBase {
 
@@ -78,6 +82,22 @@ public class ContactHelper extends HelperBase {
         if (!isElementPresent(By.id("maintable"))) {
             goToHomePage();
         }
+    }
+
+    public List<ContactData> getContactList() {
+     List<ContactData> contacts = new ArrayList<>();
+
+     List<WebElement> rows = wd.findElements(By.name("entry"));
+     for(WebElement row: rows){
+         List<WebElement> cells = row.findElements(By.tagName("td"));
+             int id = Integer.parseInt(cells.get(0).findElement(By.name("selected[]")).getAttribute("value"));
+             String lastName = cells.get(1).getText();
+             String firstName = cells.get(2).getText();
+             contacts.add(new ContactData().withId(id).withLastName(lastName).withFirstName(firstName));
+         }
+
+     System.out.println(contacts);
+        return contacts;
     }
 }
 

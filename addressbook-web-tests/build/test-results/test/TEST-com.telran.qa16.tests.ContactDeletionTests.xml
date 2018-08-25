@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.telran.qa16.tests.ContactDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-15T17:39:27" hostname="WIN-7GOOH5DG9FC" time="3.426">
+<testsuite name="com.telran.qa16.tests.ContactDeletionTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-08-20T17:03:41" hostname="WIN-7GOOH5DG9FC" time="3.267">
   <properties/>
-  <testcase name="testContactDeletion" classname="com.telran.qa16.tests.ContactDeletionTests" time="3.426"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="testContactDeletion" classname="com.telran.qa16.tests.ContactDeletionTests" time="3.267"/>
+  <system-out><![CDATA[20:03:41.216 [Test worker] INFO  com.telran.qa16.tests.TestBase - Start the testContactDeletion
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

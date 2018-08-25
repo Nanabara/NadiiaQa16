@@ -39,7 +39,7 @@ app.getGroupHelper().goToGroupsPage();
     groupsListBefore.remove(0);
     groupsListBefore.add(group);
 
-  //  Assert.assertEquals(new HashSet<Object>(groupsListAfter), new HashSet<Object>(groupsListBefore));
+   Assert.assertEquals(new HashSet<Object>(groupsListAfter), new HashSet<Object>(groupsListBefore));
 
 
   }

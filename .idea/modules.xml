@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_main.iml" group="addressbook-web-tests" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" filepath="$PROJECT_DIR$/.idea/modules/addressbook-web-tests_test.iml" group="addressbook-web-tests" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/autoauction.iml" filepath="$PROJECT_DIR$/.idea/modules/autoauction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/autoauction_main.iml" filepath="$PROJECT_DIR$/.idea/modules/autoauction_main.iml" group="autoauction" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/autoauction_test.iml" filepath="$PROJECT_DIR$/.idea/modules/autoauction_test.iml" group="autoauction" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay_main.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay_main.iml" group="enterEbay" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/enterEbay_test.iml" filepath="$PROJECT_DIR$/.idea/modules/enterEbay_test.iml" group="enterEbay" />

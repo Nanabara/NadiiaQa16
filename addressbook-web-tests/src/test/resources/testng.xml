@@ -3,18 +3,18 @@
 <suite name="Suite1" verbose="1" >
     <test name="Groups" >
         <classes>
-            <class name="com.telran.qa16.tests.GroupCreationTests" />
-            <class name="com.telran.qa16.tests.GroupDeletionTests" />
-            <class name="com.telran.qa16.tests.GroupModificationTests" />
+            <class name="com.telran.GroupCreationTests" />
+            <class name="com.telran.GroupDeletionTests" />
+            <class name="com.telran.GroupModificationTests" />
         </classes>
     </test>
 
 
     <test name="Contacts">
         <classes>
-            <class name="com.telran.qa16.tests.ContactCreationTests"/>
-            <class name="com.telran.qa16.tests.ContactModificationTests"/>
-            <class name="com.telran.qa16.tests.ContactDeletionTests"/>
+            <class name="com.telran.ContactCreationTests"/>
+            <class name="com.telran.ContactModificationTests"/>
+            <class name="com.telran.ContactDeletionTests"/>
         </classes>
     </test>
 </suite>

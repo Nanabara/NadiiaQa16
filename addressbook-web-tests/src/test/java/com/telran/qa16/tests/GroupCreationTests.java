@@ -1,6 +1,8 @@
 package com.telran.qa16.tests;
 
 import com.telran.qa16.model.GroupData;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,16 +14,14 @@ public class GroupCreationTests extends TestBase {
     @Test
     public void testGroupCreationWithEmptyFields() throws InterruptedException {
         app.getGroupHelper().goToGroupsPage();
-
         List<GroupData>groupsListBefore=app.getGroupHelper().getGroupsList();
 
         app.getGroupHelper().initGroupCreation();
         GroupData group = new GroupData()
-                .withId(groupsListBefore.get(0).getId())
                 .withName("GroupName")
                 .withHeader("GroupHeader")
                 .withFooter("GroupFooter");
-        app.getGroupHelper().fillGroupsForm(new GroupData());
+        app.getGroupHelper().fillGroupsForm(group);
         app.getGroupHelper().submitGroupCreation();
         app.getGroupHelper().returnToTheGroupsPage();
 
@@ -36,7 +36,6 @@ for(GroupData g:groupsListAfter){
  }
  group.withId(max);
 }
- //  Assert.assertEquals(new HashSet<Object>(groupsListAfter), new HashSet<Object>(groupsListBefore));
-    }
-
+   Assert.assertEquals(new HashSet<Object>(groupsListAfter), new HashSet<Object>(groupsListBefore));
+      }
 }
