@@ -1,0 +1,2 @@
+16:48:21.363 [main] INFO  com.telran.qa16.tests.TestBase - Start the testGroupCreationWithEmptyFields
+16:48:35.064 [main] INFO  com.telran.qa16.tests.TestBase - End of the testGroupCreationWithEmptyFields

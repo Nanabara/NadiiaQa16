@@ -15,7 +15,6 @@ import java.lang.reflect.Method;
 public class TestBase {
     Logger logger = LoggerFactory.getLogger(TestBase.class);
 
-
     public static ApplicationManager app
           = new ApplicationManager(System
             .getProperty("browser",BrowserType.CHROME));

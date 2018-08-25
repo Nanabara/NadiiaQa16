@@ -35,9 +35,8 @@ public class TestBase {
         app.start();
     }
 
-    @AfterSuite
-    public void tearDown() {
-        app.stop();
+    @AfterSuite (alwaysRun = true)
+    public void tearDown() { app.stop();
     }
 
     public void confirmAlert() {

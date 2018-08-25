@@ -1,0 +1,45 @@
+16:55:24.742 [main] INFO  com.telran.qa16.tests.TestBase - By.name: userfound
+16:55:24.805 [main] INFO  com.telran.qa16.tests.TestBase - By.name: userfound
+16:55:24.834 [main] INFO  com.telran.qa16.tests.TestBase - By.name: userfound
+16:55:24.886 [main] INFO  com.telran.qa16.tests.TestBase - By.name: passfound
+16:55:24.933 [main] INFO  com.telran.qa16.tests.TestBase - By.name: passfound
+16:55:24.960 [main] INFO  com.telran.qa16.tests.TestBase - By.name: passfound
+16:55:25.019 [main] INFO  com.telran.qa16.tests.TestBase - By.xpath: //*[@value ='Login']found
+16:55:25.182 [main] INFO  com.telran.qa16.tests.TestBase - Start the testGroupCreationWithEmptyFields
+16:55:35.326 [main] INFO  com.telran.qa16.tests.TestBase - By.cssSelector: [href='group.php']found
+16:55:35.438 [main] INFO  com.telran.qa16.tests.TestBase - By.cssSelector: span.groupfound
+16:55:35.470 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.506 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.541 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.578 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.613 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.647 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.680 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.714 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.748 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.785 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:35.807 [main] INFO  com.telran.qa16.tests.TestBase - By.xpath: //*[@value = 'New group'][2]found
+16:55:35.897 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_namefound
+16:55:35.956 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_namefound
+16:55:35.983 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_namefound
+16:55:36.041 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_headerfound
+16:55:36.090 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_headerfound
+16:55:36.114 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_headerfound
+16:55:36.175 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_footerfound
+16:55:36.224 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_footerfound
+16:55:36.249 [main] INFO  com.telran.qa16.tests.TestBase - By.name: group_footerfound
+16:55:36.309 [main] INFO  com.telran.qa16.tests.TestBase - By.name: submitfound
+16:55:36.437 [main] INFO  com.telran.qa16.tests.TestBase - By.linkText: group pagefound
+16:55:38.546 [main] INFO  com.telran.qa16.tests.TestBase - By.cssSelector: span.groupfound
+16:55:38.591 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.625 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.662 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.695 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.729 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.763 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.798 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.833 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.870 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.904 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.937 [main] INFO  com.telran.qa16.tests.TestBase - By.tagName: inputfound
+16:55:38.946 [main] INFO  com.telran.qa16.tests.TestBase - End of the testGroupCreationWithEmptyFields
